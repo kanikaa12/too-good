@@ -1,0 +1,322 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+* ::selection{
+    color:#fff;
+    background-color: black;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: tan;
+}
+#nav{
+    
+    width: 100%;
+    background-color: tan;
+    position: fixed;
+    z-index: 99;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#nav-part1{
+    color: rgb(70, 10, 10);
+    height: 80px;
+    overflow: hidden;
+}
+#nav-part1 svg{
+    display: block;
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#links{
+    padding: 10px;
+}
+ #nav-part2 #links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(78, 12, 12);
+    font-weight: 400;
+    font-size: 14px;
+    margin :0 20px;
+ }
+#nav-part2 #links a:hover{
+    color: rgb(102, 50, 50);
+ }
+ #nav-part2 #icons{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+    background-color: tan; 
+}
+#icons{
+    padding: 10px;
+    border-radius: 50px;
+}
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(107, 52, 52);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 19vh;
+    
+}
+
+#page1 h1{
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-family: futura ;
+    line-height: 16vw;
+    letter-spacing: -5px;
+    color:  rgb(87, 7, 7);
+
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding: 3vw 2vw;
+    background-color: rgb(71, 17, 17);
+    color: #fff;
+    font-size: 1.3vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+    
+}
+#page2 .elem{
+    height: 100vh;
+    width: 32%;
+   overflow: hidden;
+   position: relative;
+   display: flex;
+   align-items: center;
+    
+
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+#page2 .elem .dets{
+    height: 50px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(73, 20, 20);
+}
+#page2 .elem .dets .menu{
+    color: tan;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#h1{
+    color: rgb(90, 23, 23);
+}
+#word{
+    color: rgb(70, 20, 20);
+    padding: 15px;
+    font-size: 20px;
+    font-family: futura;
+    font-weight: 400;
+}
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 54vh;
+    width: 40vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+    height: 100%;
+}
+#page3 .child .desc{
+    text-align: center;
+    color: rgb(56, 5, 5);
+    padding: 20px ;
+    margin-top: 100px;
+}
+
+
+@media (max-width:600px) {
+    #nav{
+        width: 100%;
+        background-color: tan;
+        position: fixed;
+        z-index: 99;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #nav-part1{
+        color: rgb(70, 10, 10);
+        height: 60px;
+        overflow: hidden;
+    }
+    #nav-part1 svg{
+        display: block;
+        height: 60px;
+        width: 75px;
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px ;
+    }
+    #nav #nav-part2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    #links{
+        padding: 10px;
+        display: none;
+    }
+     #nav-part2 #links a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgb(78, 12, 12);
+        font-weight: 400;
+        font-size: 14px;
+        margin :0 20px;
+     }
+    #nav-part2 #links a:hover{
+        color: rgb(102, 50, 50);
+     }
+     #nav-part2 #icons{
+        font-size: 18px;
+        margin: 0 20px;
+        font-weight: 100;
+        background-color: tan; 
+    }
+    #icons{
+        padding: 7px;
+        border-radius: 50px;
+    }
+    #page1{
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+        
+    }
+    #page1 h1{
+        font-size: 15.5vw;
+        letter-spacing:-3px;
+        color:  rgb(65, 9, 9);
+    }
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+        
+    }
+    #video-container #play{
+        padding: 9vw 7.2vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    
+    }
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 5vw 3vw;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    #page2 .elem{
+        height: 100vh;
+        width: 100%;
+       overflow: hidden;
+       margin-bottom: 3vw;
+    }
+    #page3{
+        min-height: 120vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .child{
+        height: 54vh;
+        width: 88vw;
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .child img{
+        height: 100%;
+    }
+
+
+}
